@@ -41,6 +41,7 @@ create_config() {
    echo "MINSUPPLIES ${UPS_MINSUPPLIES}" >> /opt/nut/etc/upsmon.conf
 
    sed -e "s/@UPS_SENDMAIL@/$UPS_SENDMAIL/g" \
+       -e "s/@UPS_MAILFROM@/$UPS_MAILFROM/g" \
        -e "s/@UPS_MAILTO@/$UPS_MAILTO/g" \
        -e "s/@UPS_SMTPRELAY@/$UPS_SMTPRELAY/g" \
        -e "s/@UPS_ONBATTDELAY@/$UPS_ONBATTDELAY/g" \
