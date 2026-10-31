@@ -24,6 +24,7 @@ create_config() {
    UPS_PASS="$(esxcfg-advcfg -q -g /UserVars/NutPassword)"
    UPS_FINALDELAY="$(esxcfg-advcfg -q -g /UserVars/NutFinalDelay)"
    UPS_SENDMAIL="$(esxcfg-advcfg -q -g /UserVars/NutSendMail)"
+   UPS_MAILFROM="$(esxcfg-advcfg -q -g /UserVars/NutMailFrom)"
    UPS_MAILTO="$(esxcfg-advcfg -q -g /UserVars/NutMailTo)"
    UPS_SMTPRELAY="$(esxcfg-advcfg -q -g /UserVars/NutSmtpRelay)"
    UPS_MINSUPPLIES="$(esxcfg-advcfg -q -g /UserVars/NutMinSupplies)"
